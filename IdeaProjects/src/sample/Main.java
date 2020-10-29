@@ -1,6 +1,6 @@
 package sample;
 class Main {
-    public static void main(String[] args) throws IllegalArgumentException{
+    public static void main(String[] args) {
             System.out.print("Array №" + ": { ");
             int first = (int) ((Math.random() * 5) + 7);
             byte[] array = new byte[first];
