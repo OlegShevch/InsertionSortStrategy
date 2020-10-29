@@ -1,21 +1,23 @@
 package sample;
 class Main {
-    public static void main(String[] args) throws IllegalArgumentException{
-            System.out.print("Massive №" + ": { ");
+    public static void main(String[] args) {
+            System.out.print("Array №" + ": { ");
             int first = (int) ((Math.random() * 5) + 7);
             byte[] array = new byte[first];
-            massive(array);
+            fillArray(array);
             System.out.print("}\n");
             InsertionSortStrategy(array);
     }
-    public static void massive(byte array[]) {
+    
+    public static void fillArray(byte array[]) {
         for (int i = 0; i < array.length; i++) {
                 array[i] = (byte) ((int) (Math.random() * 255) - 128);
                 System.out.print(array[i] + " ");
         }
-        return;
     }
-    public static void InsertionSortStrategy(byte arr[])
+    
+    // Insertion sort
+    public static void sort(byte arr[])
     {
         int n = arr.length;
 
